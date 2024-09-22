@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .menu{
+            text-align: left;
+        }
+        .editTitle{
+            color:#007bff;
+            text-align: center;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #343a40;
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+        .section-title {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <nav >
+            <ul class="nav justify-content-left">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#secao1">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#secao2">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#secao3">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="editTitle"> 
+        <h1>Amanda Batista</h1>
+    </div>
+    <div class="container my-5">
+        <div class="row mb-4" id="secao1">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title section-title">Sobre</h2>
+                        <p class="card-text">
+                            Meu nome é amanda Batista, residente do estado de São Paulo e estou iniciando meu estudos na área de computação.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4" id="secao2">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title section-title">Projetos</h2>
+                        <p class="card-text">
+                            Esta página tem como objetivo expor os conhecimentos adquiridos na matéria de desenvolvimento front end. Esta seção tem por finalidade compor as atividades da metéria citada anteriormente.                        
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4" id="secao3">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title section-title">Contato</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="nome">Nome:</label>
+                                <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Seu email">
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem:</label>
+                                <textarea class="form-control" id="mensagem" rows="3" placeholder="Sua mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-white text-center py-3">
+        <p>&copy; <span id="currentYear"></span> Desenvolvido por Amanda Batista. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Script para atualizar o ano no rodapé
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
